@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: melodie-botrevenue
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: melodie
+  template:
+    metadata:
+      labels:
+        app: melodie
+    spec:
+      containers:
+      - name: melodie
+        image: melodie-botrevenue:latest
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: melodie-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: melodie
+  ports:
+    - port: 80
+      targetPort: 3000
