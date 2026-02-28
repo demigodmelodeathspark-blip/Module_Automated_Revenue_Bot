@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 node_modules/
 dist/
 build/
 .env
+=======
+release_*.zip
+>>>>>>> b9be2be32549d12c71baf8ef2458a35e17a7275d

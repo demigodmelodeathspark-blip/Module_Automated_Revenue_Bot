@@ -1,8 +1,18 @@
 {
+<<<<<<< HEAD
   "name": "melodie-revenue-prod",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+=======
+  "name": "melodie_botrevenue_enterprise_v2",
+  "version": "v8.20260227203315",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+>>>>>>> b9be2be32549d12c71baf8ef2458a35e17a7275d
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +21,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+<<<<<<< HEAD
     "@prisma/client": "^7.4.2",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
@@ -22,5 +33,12 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
+=======
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "joi": "^18.0.2",
+    "stripe": "^20.4.0",
+    "winston": "^3.19.0"
+>>>>>>> b9be2be32549d12c71baf8ef2458a35e17a7275d
   }
 }
